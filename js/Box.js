@@ -6,7 +6,7 @@ class Box{
         var options = {
             restitution : 0.8,
             friction: 0.45,
-            density: 1.5
+            density: 0.8
         }
         this.body = Bodies.rectangle(x,y,w,h,options);
         World.add(myWorld,this.body);
