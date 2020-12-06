@@ -19,7 +19,7 @@ class Chain{
         var begPoint = this.chain.bodyA.position;
         var endPoint = this.mypointB;
         push();
-        stroke(128);
+        stroke(180);
         strokeWeight(6);
         line(begPoint.x, begPoint.y, endPoint.x, endPoint.y);
         pop();
