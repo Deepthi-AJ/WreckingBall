@@ -87,7 +87,7 @@ function mouseDragged(){
 function drawVehicle(){
     
    push();
-   fill(128);
+   fill(0,0,128);
    noStroke();
    //body {x:width/4, y:height/6}
    rectMode(CENTER)
