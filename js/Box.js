@@ -5,7 +5,7 @@ class Box{
 
         var options = {
             restitution : 0.12,
-            friction: 0.45,
+            friction: 0.75,
             density: 0.8
         }
         this.body = Bodies.rectangle(x,y,w,h,options);
