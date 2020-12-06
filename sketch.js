@@ -55,7 +55,8 @@ function draw(){
 
     wreckingBall.display();
     myChain.display();
-
+    drawVehicle();
+   
     ground.display();
 
     for(var num = 1; num <= 6; num = num+1){
@@ -81,4 +82,20 @@ function draw(){
 
 function mouseDragged(){
     Body.setPosition(wreckingBall.body, {x:mouseX, y:mouseY});
+}
+
+function drawVehicle(){
+    
+   fill("gray");
+   //body {x:width/4, y:height/6}
+   rectMode(CENTER)
+   rect(width/10, height-height/10, width/10, height/10);
+   //wheels
+   ellipseMode(CENTER);
+   ellipse(width/10 - 25, height-height/10 - 25, 15,15);
+   ellipse(width/10 + 25, height-height/10 + 25, 15,15);
+   //rod
+   strokeWeight(13);
+   line(width/4, height/6, width/10, height-height/10);
+   
 }
