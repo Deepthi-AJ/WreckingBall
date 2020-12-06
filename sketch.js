@@ -28,22 +28,22 @@ function setup(){
     ground = new Ground(width/2, height-height/4, width/5, height/10);
     console.log(ground.width)
     for(var num = 1; num <= 6; num = num+1){
-       block1[num]= new Box((width/2+ground.width/2+ground.width/12) - (num* ground.width/6),height-height/4 - 40, ground.width/6, 40 );
+       block1[num]= new Box((width/2+ground.width/2+ground.width/12) - (num* ground.width/6),height-height/4 - height/25, ground.width/6, height/25 );
     }
     for(var num = 1; num <= 5; num = num+1){
-        block2[num]= new Box((width/2+ground.width/2) - (num* ground.width/6),height-height/4 - 80, ground.width/6, 40 );
+        block2[num]= new Box((width/2+ground.width/2) - (num* ground.width/6),height-height/4 - (2*height/25), ground.width/6, height/25 );
      }
      for(var num = 1; num <= 4; num = num+1){
-        block3[num]= new Box((width/2+ground.width/2-ground.width/12) - (num* ground.width/6),height-height/4 - 120, ground.width/6, 40 );
+        block3[num]= new Box((width/2+ground.width/2-ground.width/12) - (num* ground.width/6),height-height/4 - (3*height/25), ground.width/6, height/25 );
      }
      for(var num = 1; num <= 3; num = num+1){
-        block4[num]= new Box((width/2+ground.width/2-+ground.width/6) - (num* ground.width/6),height-height/4 - 160, ground.width/6, 40 );
+        block4[num]= new Box((width/2+ground.width/2-+ground.width/6) - (num* ground.width/6),height-height/4 - (4*height/25), ground.width/6, height/25 );
      }
      for(var num = 1; num <= 2; num = num+1){
-        block5[num]= new Box((width/2+ground.width/2-ground.width/4.5) - (num* ground.width/6),height-height/4 - 200, ground.width/6, 40 );
+        block5[num]= new Box((width/2+ground.width/2-ground.width/4.5) - (num* ground.width/6),height-height/4 - (5*height/25), ground.width/6, height/25 );
      }
      for(var num = 1; num <= 1; num = num+1){
-        block6[num]= new Box((width/2+ground.width/2-ground.width/3.3) - (num* ground.width/6),height-height/4 - 240, ground.width/6, 40 );
+        block6[num]= new Box((width/2+ground.width/2-ground.width/3.3) - (num* ground.width/6),height-height/4 - (6*height/25), ground.width/6, height/25 );
      }
 }
 
