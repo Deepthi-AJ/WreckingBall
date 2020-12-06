@@ -86,16 +86,19 @@ function mouseDragged(){
 
 function drawVehicle(){
     
+   push();
    fill("gray");
    //body {x:width/4, y:height/6}
    rectMode(CENTER)
-   rect(width/10, height-height/10, width/10, height/10);
+   rect(width/2, height-height/4, width/5, height/10);
    //wheels
    ellipseMode(CENTER);
-   ellipse(width/10 - 25, height-height/10 - 25, 15,15);
-   ellipse(width/10 + 25, height-height/10 + 25, 15,15);
+   ellipse(width/9, height-height/15, 15,15);
+   ellipse(width/9, height-height/15, 15,15);
    //rod
    strokeWeight(13);
+   stroke("gray");
    line(width/4, height/6, width/10, height-height/10);
+   pop();
    
 }
