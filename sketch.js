@@ -90,11 +90,11 @@ function drawVehicle(){
    fill("gray");
    //body {x:width/4, y:height/6}
    rectMode(CENTER)
-   rect(width/10, height-height/10, width/5, height/10);
+   rect(width/10, height-height/4, width/5, height/10);
    //wheels
    ellipseMode(CENTER);
-   ellipse(width/9, height-height/12, 15,15);
-   ellipse(width/8, height-height/12, 15,15);
+   ellipse(width/9, height-height/12, width/25,width/25);
+   ellipse(width/8, height-height/12, width/25,width/25);
    //rod
    strokeWeight(13);
    stroke("gray");
