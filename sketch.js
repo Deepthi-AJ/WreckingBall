@@ -25,7 +25,7 @@ function setup(){
     wreckingBall = new Ball(width/6,height/4,65);
     myChain = new Chain(wreckingBall.body, {x:width/4, y:height/6});
 
-    ground = new Ground(width/2, height-height/4, width/5, 25);
+    ground = new Ground(width/2, height-height/4, width/5, height/10);
     console.log(ground.width)
     for(var num = 1; num <= 6; num = num+1){
        block1[num]= new Box((width/2+ground.width/2+ground.width/12) - (num* ground.width/6),height-height/4 - 40, ground.width/6, 40 );
@@ -93,12 +93,12 @@ function drawVehicle(){
    rect(width/10, height-height/4, width/5, height/10);
    //wheels
    ellipseMode(CENTER);
-   ellipse(width/9, height-height/8, width/25,width/25);
-   ellipse(width/8, height-height/8, width/25,width/25);
+   ellipse(width/9, height-height/4 + height/20, width/25,width/25);
+   ellipse(width/8, height-height/4 + height/2, width/25,width/25);
    //rod
    strokeWeight(13);
    stroke("gray");
-   line(width/4, height/6, width/10, height-height/10);
+   line(width/10, height- height/4, width/10, height-height/10);
    pop();
    
 }
