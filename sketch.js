@@ -90,7 +90,10 @@ function drawVehicle(){
    fill("gray");
    //body {x:width/4, y:height/6}
    rectMode(CENTER)
-   rect(width/10, height-height/4 - height/20, width/5, height/10);
+      //bottom 
+      rect(width/10, height-height/4 - height/20, width/5, height/10);
+      //top 
+      rect(width/20, height-height/4 - height/20 - height/10, width/10, height/15);
    //wheels
    ellipseMode(CENTER);
    noStroke();
