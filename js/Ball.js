@@ -19,7 +19,7 @@ class Ball{
         var pos=this.body.position;
         push();
         noStroke();
-        fill(186);
+        fill(180);
         ellipseMode(CENTER);
         ellipse(pos.x, pos.y, this.radius, this.radius);
         pop();
