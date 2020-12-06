@@ -33,7 +33,7 @@ class Box{
     
         }else{
 
-            World.remove(myWorld,this.body);
+            //World.remove(myWorld,this.body);
             push();
             this.Visibility= this.Visibility - 5;
             fill(this.Visibility,0,0);
