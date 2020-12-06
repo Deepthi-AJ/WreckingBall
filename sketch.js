@@ -22,7 +22,7 @@ function setup(){
     myEngine = Engine.create();
     myWorld = myEngine.world;
 
-    wreckingBall = new Ball(width/6,height/4,65);
+    wreckingBall = new Ball(width/6,height/4,width/20);
     myChain = new Chain(wreckingBall.body, {x:width/4, y:height/6});
 
     ground = new Ground(width/2, height-height/4, width/5, height/10);
