@@ -101,7 +101,7 @@ function drawVehicle(){
    ellipse(width/10 + (width/25), height-height/4 , width/25,width/25);
    //rod
    strokeWeight(13);
-   stroke("gray");
+   stroke(0,0,128);
    line(width/10, height- height/4- height/20, width/4, height/6);
    pop();
    
